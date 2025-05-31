@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"args": [
+				"run",
+				"--project",
+				"EVRangeCalculator.csproj"
+			],
+			"command": "dotnet",
+			"group": "test",
+			"isBackground": true,
+			"label": "Run EV Range Calculator",
+			"type": "shell"
+		}
+	]
+}
