@@ -1,0 +1,59 @@
+# Dependency directories
+**/[Bb]in/
+**/[Oo]bj/
+**/[Pp]ackages/
+**/[Dd]ebug/
+**/[Rr]elease/
+
+# Visual Studio Code files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Rider files
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Aa][Rr][Mm]64/
+[Aa][Nn][Yy][Cc][Pp][Uu]/
+net6.0-windows/
+net7.0-windows/
+net8.0-windows/
+
+# Output files
+*.log
+*.tlog
+*.manifest
+*.xml
+*.cache
+*.exe
+*.dll
+*.pdb
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Optional: if you have Resharper settings
+*_i.ReSharper
+*.DotSettings.user
