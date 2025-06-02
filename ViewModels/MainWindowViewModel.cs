@@ -521,12 +521,8 @@ namespace EVRangeCalculator.ViewModels
                     case nameof(DistanceText):
                         if (!string.IsNullOrWhiteSpace(DistanceText) && (!double.TryParse(DistanceText, out double dist) || dist < 0)) // Changed <= to <
                             result = "Distance must be a non-negative number."; // Updated message
-                        break;
-
-                    case nameof(ElevationGainText):
-                        // Ensure elev is declared before use in the condition
-                        double elev;
-                        if (!double.TryParse(ElevationGainText, out elev) || elev < 0) // Elevation can be 0
+                        break;                    case nameof(ElevationGainText):
+                        if (!string.IsNullOrWhiteSpace(ElevationGainText) && (!double.TryParse(ElevationGainText, out double elev) || elev < 0)) // Elevation can be 0
                             result = "Elevation gain must be a non-negative number.";
                         break;
                     case nameof(DrivingStyleFactorText):
